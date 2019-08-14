@@ -19,15 +19,15 @@ public class GerarHTML {
 				"\r\n" + 
 				"      var data = new google.visualization.DataTable();\r\n" + 
 				"      data.addColumn('number', 'Dia');\r\n" + 
-				"      data.addColumn('number', 'Número de vendas por dia');\r\n" + 
+				"      data.addColumn('number', 'NÃºmero de vendas por dia');\r\n" + 
 
 				"\r\n" + 
 				"      data.addRows([\r\n" + 	retornaDados2(vetor) +		"      ]);\r\n" + 
 				"\r\n" + 
 				"      var options = {\r\n" + 
 				"        chart: {\r\n" + 
-				"          title: 'Número de vendas por tempo de lançamento',\r\n" + 
-				"          subtitle: 'Por dia de lançamento'\r\n" + 
+				"          title: 'NÃºmero de vendas por tempo de lanÃ§amento',\r\n" + 
+				"          subtitle: 'Por dia de lanÃ§amento'\r\n" + 
 				"        },\r\n" + 
 				"        width: 900,\r\n" + 
 				"        height: 500,\r\n" + 
@@ -52,7 +52,7 @@ public class GerarHTML {
 				"";
 		
 		
-		FileWriter arq = new FileWriter("C:\\Users\\Unifique\\Documents\\grafico.html");
+		FileWriter arq = new FileWriter("..//grafico.html");
 	    PrintWriter gravarArq = new PrintWriter(arq);
 	 
 	    gravarArq.printf(html2);
